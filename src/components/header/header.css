@@ -1,0 +1,36 @@
+.headerNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+.hero-img {
+    width: 60px;
+}
+
+.headerNav-container {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+@media screen and (max-width: 1024px) {
+    .headerNav-container {
+        width: var(--container-width-md);
+    }
+}
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+@media screen and (max-width: 600px) {
+    .headerNav-container {
+        width: var(--container-width-sm);
+    }
+}

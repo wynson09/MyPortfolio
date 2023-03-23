@@ -1,0 +1,106 @@
+
+.skill-box {
+    scroll-margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 50px;
+    gap: 15px;
+}
+.front-end, .back-end, .others {
+    width: 400px;
+    height: 380px;
+    text-align: center;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    box-shadow: var(--color-shadow);
+    padding: 1rem;
+}
+.category-icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    width: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.prof-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+}
+.skills h5 {
+    font-size: 0.95rem;
+}
+.prof-skills small {
+    margin-top: -7px;
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+.skill:hover {
+    transform: scale(1.2);
+}
+
+/* ============================ MEDIA QUERIES (LARGE DEVICES) ============================ */
+@media screen and (max-width: 1800px){
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .skill-box {
+        height: auto;
+        margin-top: 0;
+    }
+    
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+@media screen and (max-width: 1024px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    .skill-box {
+        height: auto;
+        width: auto;
+    }
+}
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+@media screen and (max-width: 600px) {
+    .skill-box {
+        height: auto;
+    }
+}
+/* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ============================ */
+@media screen and (max-width: 400px) {
+    .front-end, .back-end, .others {
+        width: 300px;
+        height: 380px;
+    }
+}

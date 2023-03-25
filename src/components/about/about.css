@@ -3,9 +3,7 @@
     margin-top: 100px;
     grid-template-columns: 35% 50%;
     gap: 15%;
-}
-#about {
-    margin-bottom: 240px;
+    height: 80vh;
 }
 .about__me {
     width: 100%;
@@ -46,7 +44,7 @@
 
 .about__card:hover {
     background: transparent;
-    background-color: var(--color-primary-variant);
+    border-color: var(--color-primary-variant);
     box-shadow: var(--color-shadow-variant);
     cursor: default;
 }
@@ -81,6 +79,7 @@
         grid-template-columns: 1fr;
         gap: 0;
         margin-top: 0;
+        height: auto
     }
     .about__me {
         width: 50%;
@@ -90,7 +89,7 @@
         margin: 1rem 0 1.5rem;
     }
     #about {
-        margin-bottom: 130px;
+        margin-bottom: 150px;
     }
 }
 
@@ -109,5 +108,8 @@
     }
     .about__content p{
         margin: 1.5rem 0;
+    }
+    #about {
+        margin-bottom: 120px;
     }
 }

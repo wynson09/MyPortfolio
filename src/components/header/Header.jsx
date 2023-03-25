@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './header.css';
 import DarkMode from './DarkMode';
 import logo from '../../assets/logo.png';
 import logo2 from '../../assets/logo-2.png';
 
-const Header = () => {
-    const [myLogo, setMyLogo] = useState(false);
+const Header = ({themeStatus, myLogo}) => {
 
-    const themeStatus = (status) =>{
-        if(status === false) setMyLogo(false)
-        else setMyLogo(true) 
-    }
   return (
     <div className='headerNav'>
         <div className='headerNav-container'>

@@ -31,6 +31,7 @@
 /* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
 @media screen and (max-width: 600px) {
     .headerNav-container {
-        width: var(--container-width-sm);
+        width: 100%;
+        margin: 0 15px;
     }
 }

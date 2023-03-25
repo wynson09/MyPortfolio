@@ -1,8 +1,9 @@
 import React from 'react';
 import './nav.css';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
-import { BiCodeBlock, BiBook, BiMessageSquareDetail } from 'react-icons/bi';
-import { BsFileEarmarkCode } from 'react-icons/bs';
+import { BiCodeBlock } from 'react-icons/bi';
+import { BsFileEarmarkCode, BsChatSquareText } from 'react-icons/bs';
+import { MdOutlineSchool } from 'react-icons/md';
 import { useState } from 'react';
 
 const Nav = () => {
@@ -13,8 +14,8 @@ const Nav = () => {
       <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
       <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}><BiCodeBlock /></a>
       <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BsFileEarmarkCode /></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
+      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><MdOutlineSchool /></a>
+      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BsChatSquareText /></a>
     </nav>
   )
 }

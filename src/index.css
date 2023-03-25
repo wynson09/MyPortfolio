@@ -35,8 +35,7 @@
   --color-light: rgba(255, 255, 255, 0.6);
   --color-shadow: none;
   --color-shadow-variant: none;
-  --color-bg-img: linear-gradient(45deg, transparent, var(--color-primary), transparent
-);
+  --color-bg-img: linear-gradient(45deg, transparent, var(--color-primary), transparent);
 }
 
 html {

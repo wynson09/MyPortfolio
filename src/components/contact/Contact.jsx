@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css';
 import { TfiEmail } from 'react-icons/tfi';
-import { BsMessenger } from 'react-icons/bs';
+import { BsMessenger, BsSendCheck, BsSend } from 'react-icons/bs';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  const [sndMsg, setSndMsg] = useState(false);
+  const [msgIcon, setMsgIcon] = useState(<BsSend />);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSndMsg(true);
+    setMsgIcon(<BsSendCheck />);
+
+    emailjs.sendForm('service_mt3wgn7', 'template_uhjz6b2', form.current, 'geUCz0mPZ6PqTDW23')
+      .then(() => {
+        e.target.reset();
+        setTimeout(()=> {
+          setMsgIcon(<BsSend />);
+          setSndMsg(false);
+        }, 2000)       
+      })
+    
+  };
   return (
     <section id='contact' className='contact-body'>
       <h5>Get In Touch</h5>
@@ -25,11 +46,11 @@ const Contact = () => {
           </article>
         </div>
       {/* END OF CONTACT OPTIONS */}
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <input type="name" name="name" placeholder='Your Full Name' required />
             <input type="email" name="email" placeholder='Your Email' required />
-            <textarea name="messege" rows="7" placeholder='Your Messege' required></textarea>
-            <button type='submit' className='btn btn-primary'>Send Messege</button>
+            <textarea name="message" rows="7" placeholder='Your Messege' required></textarea>
+            <button type='submit' className='btn btn-primary msg-btn'><span className='msgIcon'>{msgIcon}</span>{sndMsg ? `Message Sent`  : 'Send Message'}</button>
           </form>
         </div>
     </section>

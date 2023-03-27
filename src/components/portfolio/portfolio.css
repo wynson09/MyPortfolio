@@ -75,7 +75,7 @@ article p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
-        margin: 0 25px;
+        margin: 60px 25px 0;
     }
     .portfolio-body {
         display: flex;
@@ -89,7 +89,7 @@ article p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
-        margin: 0 15px;
+        margin: 60px 15px 0;
     }
 }
 
@@ -100,7 +100,7 @@ article p {
         height: 610px;
     }
     .portfolio__container {
-        margin: 0;
+        margin: 60px 0 0;
     }
     .portfolio__item:hover {
         transform: scale(1);

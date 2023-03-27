@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper";
 
+
 const Header = () => {
   const [firstCursor, setFirstCursor] = useState('l');
   const [secondCursor, setSecondCursor] = useState('l');
@@ -83,8 +84,11 @@ const Header = () => {
           <CTA />
           <HeaderSocial />
         </div>
-    
-        <div className='img-container'>
+            
+        <div className='img-container' 
+        data-aos="slide-left"
+        data-aos-delay="100"
+        data-aos-duration="800">
             <Swiper
               effect={"flip"}
               grabCursor={true}

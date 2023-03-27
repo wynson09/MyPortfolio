@@ -74,10 +74,22 @@ const Experience = () => {
 
   return (
     <section id='experience' className='experience-body'>
-      <h5>My Personal Journey</h5>
-      <h2>Qualification</h2>
+      <h5
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >My Personal Journey</h5>
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >Qualification</h2>
 
-      <article className='qualification-container'>
+      <article className='qualification-container'
+        data-aos="fade-right"
+        data-aos-delay="500"
+        data-aos-duration="500"
+      >
         <div className='qualifcation-category'>
           <button id='title-exp' className='experience click' onClick={()=> controller(true)}>Experience</button>
           <button id='title-edu' className='education'onClick={()=> controller(false)}>Education</button>

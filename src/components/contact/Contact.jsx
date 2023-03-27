@@ -27,11 +27,23 @@ const Contact = () => {
   };
   return (
     <section id='contact' className='contact-body'>
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >Get In Touch</h5>
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >Contact Me</h2>
 
       <div className='container contact__container'>
-        <div className='contact__options'>
+        <div className='contact__options'
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
           <article className='contact__option'>
             <TfiEmail className='contact__option-icon'/>
             <h4>Email</h4>
@@ -46,7 +58,11 @@ const Contact = () => {
           </article>
         </div>
       {/* END OF CONTACT OPTIONS */}
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail}
+            data-aos="fade-right"
+            data-aos-delay="700"
+            data-aos-duration="500"
+          >
             <input type="name" name="name" placeholder='Your Full Name' required />
             <input type="email" name="email" placeholder='Your Email' required />
             <textarea name="message" rows="7" placeholder='Your Messege' required></textarea>

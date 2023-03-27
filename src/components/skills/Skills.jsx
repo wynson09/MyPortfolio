@@ -122,10 +122,26 @@ const Skills = () => {
   
   return (
     <section id='skills' className='skill-box'>
-      <h5>What skills I have</h5>
-      <h2>My Technical Skills</h2>
+      <h5
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >
+        What skills I have
+      </h5>
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >
+        My Technical Skills
+      </h2>
       <article className='skills-container'>
-        <div className='front-end'>
+        <div className='front-end'
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-duration="500"
+        >
           <div className='category'>
             <HiCode className='category-icon'/>
             <h2>Front-End</h2>
@@ -142,7 +158,11 @@ const Skills = () => {
             })}
           </ul>
         </div>
-        <div className='back-end'>
+        <div className='back-end'
+          data-aos="fade-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+        >
           <div className='category'>
             <FaCodeBranch className='category-icon'/>
             <h2>Back-End</h2>
@@ -159,7 +179,11 @@ const Skills = () => {
             })}
           </ul>
         </div>
-        <div className='others'>
+        <div className='others'
+          data-aos="fade-right"
+          data-aos-delay="900"
+          data-aos-duration="500"
+        >
           <div className='category'>
             <GiSkills className='category-icon'/>
             <h2>Others</h2>

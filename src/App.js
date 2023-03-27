@@ -1,4 +1,4 @@
-import React , { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Hero from './components/hero/Hero';
 import Nav from './components/nav/Nav';
@@ -12,15 +12,10 @@ import Header from './components/header/Header';
 
 
 function App() {
-  const [myLogo, setMyLogo] = useState(false);
 
-  const themeStatus = (status) =>{
-      if(status === false) setMyLogo(false)
-      else setMyLogo(true) 
-  }
   return (
     <>
-      <Header themeStatus={themeStatus} myLogo={myLogo}/>
+      <Header />
       <Hero />
       <Nav />
       <About />

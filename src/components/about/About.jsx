@@ -11,16 +11,36 @@ import { VscFolderLibrary } from 'react-icons/vsc';
 const About = () => {
   return (
     <section id='about'>
-      <h5>Get to Know</h5>
-      <h2>About Me</h2>
+      <h5
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="500"
+      >
+        Get to Know
+      </h5>
+      <h2
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="500"
+      >
+        About Me
+      </h2>
 
       <div className='container about__container'>
-        <div className='about__me'>
+        <div className='about__me'
+          data-aos="fade-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+        >
           <div className='about__me-image'>
             <img src={Me} alt="about pic" />
           </div>
         </div>
-        <div className='about__content'>
+        <div className='about__content'
+          data-aos="fade-left"
+          data-aos-delay="700"
+          data-aos-duration="500"
+        >
           <div className='about__cards'>
             <article className='about__card'>
               <FaAward className='about_icon'/>

@@ -58,18 +58,6 @@ const Experience = () => {
   const [timeline, setTimeline] = useState(work);
   const exp = document.getElementById('title-exp');
   const edu = document.getElementById('title-edu');
-  const controller = (value) => {  
-    if(value) {
-      setTimeline(work);
-      exp.classList.add('click');
-      edu.classList.remove('click');
-    }
-    else {
-      setTimeline(school);
-      edu.classList.add('click');
-      exp.classList.remove('click');
-    }
-  }
 
 
   return (
@@ -91,8 +79,16 @@ const Experience = () => {
         data-aos-duration="500"
       >
         <div className='qualifcation-category'>
-          <button id='title-exp' className='experience click' onClick={()=> controller(true)}>Experience</button>
-          <button id='title-edu' className='education'onClick={()=> controller(false)}>Education</button>
+          <button id='title-exp' className='experience click' onClick={()=> {
+            exp?.classList.add('click');
+            edu?.classList.remove('click');
+            setTimeline(work);
+          }}>Experience</button>
+          <button id='title-edu' className='education' onClick={()=> {
+            exp?.classList.remove('click');
+            edu?.classList.add('click');
+            setTimeline(school);
+          }}>Education</button>
         </div>
         <VerticalTimeline lineColor={'#4db5ff'}>
           {timeline?.map(({id, Date, Title, Company, Icon}) => {

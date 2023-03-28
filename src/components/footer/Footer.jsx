@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png'
 const Footer = () => {
   return (
     <footer>
-      <a a href="/#" className='footer-logo'>
+      <a href="/#" className='footer-logo'>
         <div className='footer-img'>
           <img src={logo} alt="logo"/>
         </div>
@@ -26,7 +26,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/wynson-carl-nacalaban-63949a1b9/" target='_blank'><BsLinkedin /></a>
         <a href="https://www.facebook.com/wynson30" target='_blank'><BsFacebook /></a>
         <a href="https://github.com/wynson09" target='_blank'><BsGithub /></a>
-    </div>
+      </div>
 
     <div className='footer__copyright'>
       <small>&copy; Designed & Built by Wynson Nacalaban</small>

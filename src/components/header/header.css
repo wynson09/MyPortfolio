@@ -16,7 +16,7 @@
 }
 
 .headerNav-container {
-    width: 65%;
+    width: var(--container-width-lg);
     display: flex;
     justify-content: space-between;
     align-items: flex-start

@@ -1,17 +1,15 @@
-header {
-    height: 100vh;
-    overflow: hidden;
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;
-    height: 100%;
+    height: 100vh;
     position: relative;
-
 }
-
 header h5 {
     font-size: 1.5em;
 }
@@ -46,21 +44,17 @@ header h5 {
     width: 500px;
 }
 .me-container {
-    width: 26rem;
-    height: 34rem;
     position: relative;
     margin: 30px;
     cursor: pointer;
 }
 .me {
-    width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 .me img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: all 0.2s ease-in-out;
 }
 .me-container::before {
@@ -101,15 +95,12 @@ header h5 {
 
 /* ============================ MEDIA QUERIES (LARGE DEVICES) ============================ */
 @media screen and (max-width: 1800px){
-    header {
-        height: auto;
-        width: auto;
-    }
     .header__container {
         display: flex;
         flex-direction: column;
         gap: 50px;
         margin: 200px 0 150px 0;
+        height: auto;
     }
     .typeWriter-container {
         display: flex;
@@ -121,21 +112,16 @@ header h5 {
 
 /* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
 @media screen and (max-width: 1024px) {
-    header {
-        height: auto;
-        width: auto;
-    }
     .header__container {
         margin-top: 150px 0 120px 0;
+    }
+    .img-container {
+        width: 400px;
     }
 }
 
 /* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
 @media screen and (max-width: 600px) {
-    header {
-        height: auto;
-        width: auto;
-    }
     header h5 {
         font-size: 1rem;
     }
@@ -145,15 +131,15 @@ header h5 {
     }
     .header__container {
         margin-top: 150px 0 120px 0;
-        gap: 10px;
+        gap: 30px;
     }
     .img-container {
+        margin-left: -50px;
         width: 300px;
-        margin-right: -30px;
     }
     .me-container {
-        width: 200px;
-        height: auto;
+        width: 300px;
+        height: 100%;
     }
     .cta, .header__socials {
         margin-top: 1rem;
@@ -161,13 +147,17 @@ header h5 {
 
 }
 /* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ============================ */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
     header h1 {
         font-size: 1.4rem;
         font-weight: 600;
     }
     .header__container {
         margin: 120px 0 100px 0;
-        gap: 10px;
+        gap: 20px;
+    }
+    .me-container {
+        width: 250px;
+        height: auto;
     }
 }

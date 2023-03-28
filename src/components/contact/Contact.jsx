@@ -39,27 +39,30 @@ const Contact = () => {
       >Contact Me</h2>
 
       <div className='container contact__container'>
-        <div className='contact__options'
-          data-aos="fade-left"
+        <div
+          data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="500"
         >
-          <article className='contact__option'>
-            <TfiEmail className='contact__option-icon'/>
-            <h4>Email</h4>
-            <h5>wynsonnacalaban30@gmail.com</h5>
-            <a href="mailto:wynsonnacalaban30@gmail.com" target='_blank'>Send a messenge</a>
-          </article>
-          <article className='contact__option'>
-            <BsMessenger className='contact__option-icon'/>
-            <h4>Messenger</h4>
-            <h5>Wynson Carl Nacalaban</h5>
-            <a href="https://m.me/wynson30" target='_blank'>Send a messenge</a>
-          </article>
+          <div className='contact__options'>
+            <article className='contact__option'>
+              <TfiEmail className='contact__option-icon'/>
+              <h4>Email</h4>
+              <h5>wynsonnacalaban30@gmail.com</h5>
+              <a href="mailto:wynsonnacalaban30@gmail.com" target='_blank'>Send a messenge</a>
+            </article>
+            <article className='contact__option'>
+              <BsMessenger className='contact__option-icon'/>
+              <h4>Messenger</h4>
+              <h5>Wynson Carl Nacalaban</h5>
+              <a href="https://m.me/wynson30" target='_blank'>Send a messenge</a>
+            </article>
+          </div>          
         </div>
+
       {/* END OF CONTACT OPTIONS */}
           <form ref={form} onSubmit={sendEmail}
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="700"
             data-aos-duration="500"
           >
@@ -68,7 +71,7 @@ const Contact = () => {
             <textarea name="message" rows="7" placeholder='Your Messege' required></textarea>
             <button type='submit' className='btn btn-primary msg-btn'><span className='msgIcon'>{msgIcon}</span>{sndMsg ? `Message Sent`  : 'Send Message'}</button>
           </form>
-        </div>
+      </div>
     </section>
   )
 }

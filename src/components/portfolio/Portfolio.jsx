@@ -66,11 +66,12 @@ const Portfolio = () => {
       {projects.map(({id, img, Title, Description, Tech, Git, Live, Delay}) => {
         return (
           <div
+            key={id}
             data-aos="fade-up"
             data-aos-delay={Delay}
             data-aos-duration="500"
           >
-            <div className='portfolio__item' key={id}>
+            <div className='portfolio__item'>
               <div className='btn-design'>
                 <img src={design} alt="" />
               </div>

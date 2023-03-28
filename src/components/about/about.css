@@ -70,6 +70,7 @@
 }
 
 #about {
+    margin-top: 150px;
     scroll-margin-top: 80px;
 }
 
@@ -111,5 +112,8 @@
     }
     #about {
         margin-bottom: 120px;
+    }
+    .about__container {
+        margin-top: 80px;
     }
 }

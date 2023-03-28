@@ -1,5 +1,4 @@
 .contact-body {
-    height: 100vh;
     margin-top: 150px;
     scroll-margin-top: 100px;
 }
@@ -8,7 +7,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-content: center;
-    gap: 50px;
+    gap: 12px;
+    height: 100vh;
 }
 .contact__options {
     display: flex;
@@ -74,6 +74,7 @@ textarea {
         flex-direction: column;
         gap: 50px;
         margin-top: 80px;
+        height: auto;
     }
     .contact__options {
         display: flex;
@@ -103,8 +104,5 @@ textarea {
     }
     .contact__option {
         width: 100%;
-    }
-    .contact-body {
-        height: auto;
     }
 }

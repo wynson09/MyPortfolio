@@ -8,7 +8,8 @@
     margin-bottom: 310px;
 }
 .qualification-container {
-    width: var(--container-width-lg);
+    width: auto;
+    margin: 0 10px;
 }
 .qualifcation-category {
     display: flex;

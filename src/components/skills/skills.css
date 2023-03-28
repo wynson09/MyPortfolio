@@ -110,7 +110,7 @@
     }
 }
 /* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ============================ */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
     .front-end, .back-end, .others {
         width: 300px;
         height: 380px;

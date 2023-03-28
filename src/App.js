@@ -14,7 +14,7 @@ import Header from './components/header/Header';
 function App() {
 
   return (
-    <>
+    <div>
       <Header />
       <Hero />
       <Nav />
@@ -24,7 +24,7 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

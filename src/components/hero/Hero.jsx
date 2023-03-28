@@ -41,11 +41,13 @@ const Header = () => {
   }, [firstCursor, firstText])
   
   return (
-    <header className="container">
-      <div className="header__container">
+    
+    <header className="hero-container">
+      <div className="container header__container">
         <div className='typeWriter-container'>
           <h5>
             <Typewriter
+                className='TW'
                 words={[`Hello I'm`]}
                 cursor
                 cursorStyle={firstCursor}
@@ -86,10 +88,9 @@ const Header = () => {
         </div>
             
         <div className='img-container' 
-        data-aos="fade-left"
+        /* data-aos="fade-up"
         data-aos-delay="700"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out"
+        data-aos-duration="800" */
         >
             <Swiper
               effect={"flip"}

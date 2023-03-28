@@ -137,69 +137,76 @@ const Skills = () => {
         My Technical Skills
       </h2>
       <article className='skills-container'>
-        <div className='front-end'
-          data-aos="fade-right"
-          data-aos-delay="500"
-          data-aos-duration="500"
-        >
-          <div className='category'>
-            <HiCode className='category-icon'/>
-            <h2>Front-End</h2>
-          </div>
-          <ul className='prof-skills'>
-            {frontEnd.map((index) => {
-              return (
-              <li className="skill" key={index.id}>
-                <img src={index.src} alt="icon" />
-                <h5>{index.skillName}</h5>
-                <small>{index.level}</small>
-              </li>
-              )
-            })}
-          </ul>
-        </div>
-        <div className='back-end'
+        <div
           data-aos="fade-right"
           data-aos-delay="700"
           data-aos-duration="500"
         >
-          <div className='category'>
-            <FaCodeBranch className='category-icon'/>
-            <h2>Back-End</h2>
+          <div className='front-end'>
+            <div className='category'>
+              <HiCode className='category-icon'/>
+              <h2>Front-End</h2>
+            </div>
+            <ul className='prof-skills'>
+              {frontEnd.map((index) => {
+                return (
+                <li className="skill" key={index.id}>
+                  <img src={index.src} alt="icon" />
+                  <h5>{index.skillName}</h5>
+                  <small>{index.level}</small>
+                </li>
+                )
+              })}
+            </ul>
           </div>
-          <ul className='prof-skills'>
-          {backEnd.map((index) => {
-              return (
-              <li className="skill" key={index.id}>
-                <img src={index.src} alt="icon" />
-                <h5>{index.skillName}</h5>
-                <small>{index.level}</small>
-              </li>
-              )
-            })}
-          </ul>
         </div>
-        <div className='others'
+        <div
+          data-aos="fade-right"
+          data-aos-delay="700"
+          data-aos-duration="500"
+        >
+          <div className='back-end'>
+            <div className='category'>
+              <FaCodeBranch className='category-icon'/>
+              <h2>Back-End</h2>
+            </div>
+            <ul className='prof-skills'>
+            {backEnd.map((index) => {
+                return (
+                <li className="skill" key={index.id}>
+                  <img src={index.src} alt="icon" />
+                  <h5>{index.skillName}</h5>
+                  <small>{index.level}</small>
+                </li>
+                )
+              })}
+            </ul>
+          </div>
+        </div>
+        <div
           data-aos="fade-right"
           data-aos-delay="900"
           data-aos-duration="500"
         >
-          <div className='category'>
-            <GiSkills className='category-icon'/>
-            <h2>Others</h2>
+          <div className='others'>
+            <div className='category'>
+              <GiSkills className='category-icon'/>
+              <h2>Others</h2>
+            </div>
+            <ul className='prof-skills'>
+            {others.map((index) => {
+                return (
+                <li className="skill" key={index.id}>
+                  <img src={index.src} alt="icon" />
+                  <h5>{index.skillName}</h5>
+                  <small>{index.level}</small>
+                </li>
+                )
+              })}
+            </ul>
           </div>
-          <ul className='prof-skills'>
-          {others.map((index) => {
-              return (
-              <li className="skill" key={index.id}>
-                <img src={index.src} alt="icon" />
-                <h5>{index.skillName}</h5>
-                <small>{index.level}</small>
-              </li>
-              )
-            })}
-          </ul>
         </div>
+        
       </article>
     </section>
   )

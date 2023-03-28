@@ -65,27 +65,30 @@ const Portfolio = () => {
       <article className='portfolio__container'>
       {projects.map(({id, img, Title, Description, Tech, Git, Live, Delay}) => {
         return (
-          <div className='portfolio__item' key={id}
-          data-aos="fade-up"
-          data-aos-delay={Delay}
-          data-aos-duration="500"
+          <div
+            data-aos="fade-up"
+            data-aos-delay={Delay}
+            data-aos-duration="500"
           >
-            <div className='btn-design'>
-              <img src={design} alt="" />
-            </div>
-            <div className='portfolio__item-img'>
-              <img src={img} alt="item-img" />
-            </div>
-            <h3>{Title}</h3>
-            <p>{Description}</p>
-            <div>
-              <h4>{Tech}</h4>
-            </div>
-            <div className='btn-portfolio'>
-              <a href={Git} className='btn' target='_blank'>GitHub</a>
-              <a href={Live} className='btn btn-primary' target='_blank'>Live Demo</a>
+            <div className='portfolio__item' key={id}>
+              <div className='btn-design'>
+                <img src={design} alt="" />
+              </div>
+              <div className='portfolio__item-img'>
+                <img src={img} alt="item-img" />
+              </div>
+              <h3>{Title}</h3>
+              <p>{Description}</p>
+              <div>
+                <h4>{Tech}</h4>
+              </div>
+              <div className='btn-portfolio'>
+                <a href={Git} className='btn' target='_blank'>GitHub</a>
+                <a href={Live} className='btn btn-primary' target='_blank'>Live Demo</a>
+              </div>
             </div>
           </div>
+          
         )
       })}
         

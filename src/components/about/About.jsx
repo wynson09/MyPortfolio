@@ -28,7 +28,7 @@ const About = () => {
 
       <div className='container about__container'>
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-delay="700"
           data-aos-duration="500"
         >
@@ -40,7 +40,7 @@ const About = () => {
         </div>
 
         <div className='about__content'
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="700"
           data-aos-duration="500"
         >

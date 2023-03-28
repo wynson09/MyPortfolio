@@ -88,9 +88,9 @@ const Header = () => {
         </div>
             
         <div className='img-container' 
-        /* data-aos="fade-up"
+        data-aos="fade-up"
         data-aos-delay="700"
-        data-aos-duration="800" */
+        data-aos-duration="800"
         >
             <Swiper
               effect={"flip"}

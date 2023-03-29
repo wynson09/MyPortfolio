@@ -49,13 +49,13 @@ const Contact = ({ contactRef }) => {
               <TfiEmail className='contact__option-icon'/>
               <h4>Email</h4>
               <h5>wynsonnacalaban30@gmail.com</h5>
-              <a href="mailto:wynsonnacalaban30@gmail.com" target='_blank'>Send a messange</a>
+              <a href="mailto:wynsonnacalaban30@gmail.com" target='_blank'>Send a message</a>
             </article>
             <article className='contact__option'>
               <BsMessenger className='contact__option-icon'/>
               <h4>Messenger</h4>
               <h5>Wynson Carl Nacalaban</h5>
-              <a href="https://m.me/wynson30" target='_blank'>Send a messange</a>
+              <a href="https://m.me/wynson30" target='_blank'>Send a message</a>
             </article>
           </div>          
         </div>

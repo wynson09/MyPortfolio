@@ -81,7 +81,7 @@ const Portfolio = ({ portfolioRef }) => {
               <h3>{Title}</h3>
               <p>{Description}</p>
               <div>
-                <h4>{Tech}</h4>
+                <h4 className='port-h4'>{Tech}</h4>
               </div>
               <div className='btn-portfolio'>
                 <a href={Git} className='btn' target='_blank'>GitHub</a>

@@ -49,13 +49,13 @@ const Contact = ({ contactRef }) => {
               <TfiEmail className='contact__option-icon'/>
               <h4>Email</h4>
               <h5>wynsonnacalaban30@gmail.com</h5>
-              <a href="mailto:wynsonnacalaban30@gmail.com" target='_blank'>Send a messenge</a>
+              <a href="mailto:wynsonnacalaban30@gmail.com" target='_blank'>Send a messange</a>
             </article>
             <article className='contact__option'>
               <BsMessenger className='contact__option-icon'/>
               <h4>Messenger</h4>
               <h5>Wynson Carl Nacalaban</h5>
-              <a href="https://m.me/wynson30" target='_blank'>Send a messenge</a>
+              <a href="https://m.me/wynson30" target='_blank'>Send a messange</a>
             </article>
           </div>          
         </div>
@@ -68,7 +68,7 @@ const Contact = ({ contactRef }) => {
           >
             <input type="name" name="name" placeholder='Your Full Name' required />
             <input type="email" name="email" placeholder='Your Email' required />
-            <textarea name="message" rows="7" placeholder='Your Messege' required></textarea>
+            <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
             <button type='submit' className='btn btn-primary msg-btn'><span className='msgIcon'>{msgIcon}</span>{sndMsg ? `Message Sent`  : 'Send Message'}</button>
           </form>
       </div>

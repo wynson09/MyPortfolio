@@ -1,5 +1,4 @@
 .experience-body {
-    height: auto;
     scroll-margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -8,8 +7,7 @@
     margin-bottom: 310px;
 }
 .qualification-container {
-    width: auto;
-    margin: 0 10px;
+    width: 700px;
 }
 .qualifcation-category {
     display: flex;
@@ -42,7 +40,7 @@
     color: var(--color-primary);
 }
 .vertical-timeline-element-date {
-    margin: 0 10px;
+    margin: 0 25px;
     color: var(--color-light);
 }
 /* ============================ MEDIA QUERIES (DOUBLE XL DEVICES) ============================ */
@@ -65,20 +63,32 @@
     }
 }
 /* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
     .experience-body {
         margin-bottom: 310px;
+    }
+    .qualification-container {
+        width: 500px;
     }
 }
 /* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
 @media screen and (max-width: 600px) {
    .experience {
-    margin-right: 45px;
+    margin-right: 30px;
    }
    .education {
-    margin-left: 45px;
+    margin-left: 30px;
    }
    .experience-body {
     margin-bottom: 150px;
+    }
+    .qualification-container {
+        width: 300px;
+    }
+}
+/* ============================ MEDIA QUERIES (EXTRA SMALL DEVICES) ============================ */
+@media screen and (max-width: 400px) {
+    .qualification-container {
+        width: 250px;
     }
 }

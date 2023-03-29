@@ -15,8 +15,8 @@ const Portfolio = () => {
       Title: 'Portfolio',
       Description: `My personal portfolio website It's a simple portfolio with contact options such as email, messenger, or direct message.`,
       Tech: `Tech used: React, CSS, React Icons, SwiperJS, React-typewriter and other React components`,
-      Git: 'https://www.facebook.com/wynson30',
-      Live: 'https://www.facebook.com/wynson30',
+      Git: 'https://github.com/wynson09/MyPortfolio.git',
+      Live: 'https://wynson30.pages.dev/',
       Delay: '400'
     },
     {

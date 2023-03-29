@@ -73,43 +73,47 @@ const Experience = () => {
         data-aos-duration="500"
       >Qualification</h2>
 
-      <article className='qualification-container'
+      <article
         data-aos="fade-right"
         data-aos-delay="500"
         data-aos-duration="500"
       >
-        <div className='qualifcation-category'>
-          <button id='title-exp' className='experience click' onClick={()=> {
-            exp?.classList.add('click');
-            edu?.classList.remove('click');
-            setTimeline(work);
-          }}>Experience</button>
-          <button id='title-edu' className='education' onClick={()=> {
-            exp?.classList.remove('click');
-            edu?.classList.add('click');
-            setTimeline(school);
-          }}>Education</button>
-        </div>
-        <VerticalTimeline lineColor={'#4db5ff'}>
-          {timeline?.map(({id, Date, Title, Company, Icon}) => {
-            return (
-              <VerticalTimelineElement
-                key={id}
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: 'transparent', color: '#4db5ff', boxShadow: 'none'}}
-                contentArrowStyle={{ borderRight: '7px solid  transparent' }}
-                date={Date}
-                iconStyle={{ background: '#4db5ff', color: '#fff' }}
-                icon={<Icon />}
-              >
-                <h3 className="vertical-timeline-element-title">{Title}</h3>
-                <h4 className="vertical-timeline-element-subtitle">{Company}</h4>
-              </VerticalTimelineElement>
-            )
-          })}
-          
-        </VerticalTimeline>
+        <div className='qualification-container'>
+          <div className='qualifcation-category'>
+            <button id='title-exp' className='experience click' onClick={()=> {
+              console.log(exp);
+              /* exp.classList.add('click');
+              edu.classList.remove('click'); */
+              setTimeline(work);
+            }}>Experience</button>
+            <button id='title-edu' className='education' onClick={()=> {
+              console.log(edu);
+              /* exp.classList.remove('click');
+              edu.classList.add('click'); */
+              setTimeline(school);
+            }}>Education</button>
+          </div>
+          <VerticalTimeline lineColor={'#4db5ff'} animate={false}>
+            {timeline?.map(({id, Date, Title, Company, Icon}) => {
+              return (
+                <VerticalTimelineElement
+                  key={id}
+                  className="vertical-timeline-element--work"
+                  contentStyle={{ background: 'transparent', color: '#4db5ff', boxShadow: 'none'}}
+                  contentArrowStyle={{ borderRight: '7px solid  transparent' }}
+                  date={Date}
+                  iconStyle={{ background: '#4db5ff', color: '#fff' }}
+                  icon={<Icon />}
+                >
+                  <h3 className="vertical-timeline-element-title">{Title}</h3>
+                  <h4 className="vertical-timeline-element-subtitle">{Company}</h4>
+                </VerticalTimelineElement>
+              )
+            })}  
+          </VerticalTimeline>
+        </div>        
       </article>
+
       
     </section>
   )

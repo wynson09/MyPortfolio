@@ -61,7 +61,7 @@ const About = () => {
               <small>2 + Completed</small>
             </article>
           </div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem tenetur repellat quis quas repudiandae, eligendi, quaerat, enim itaque molestias deleniti facere expedita esse alias id officia maiores provident vero!</p>
+          <p>Changing my career is one of the biggest decisions I've made. Since I was in college, I already wanted to become a web developer, and now I am a self-taught web developer. I have developed my abilities by pursuing online courses and consistently challenging myself to learn and grow in this constantly evolving industry. I enhanced my abilities by practicing constantly and developing real-world projects.</p>
           <a href={CV} download className='btn btn-primary'>Download CV</a>
         </div>
       </div>

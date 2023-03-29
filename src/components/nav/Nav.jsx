@@ -4,10 +4,15 @@ import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiCodeBlock } from 'react-icons/bi';
 import { BsFileEarmarkCode, BsChatSquareText } from 'react-icons/bs';
 import { MdOutlineSchool } from 'react-icons/md';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const Nav = () => {
+const Nav = ({ onView }) => {
   const [activeNav, setActiveNav] = useState('#');
+
+  useEffect(() => {
+    setActiveNav(onView);
+  }, [onView])
+  
   return (
     <nav>
       <a href="/#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>

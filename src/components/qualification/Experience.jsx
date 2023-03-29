@@ -6,7 +6,7 @@ import { BsBriefcase as WorkIcon} from 'react-icons/bs';
 import { FaUserGraduate as SchoolIcon} from 'react-icons/fa';
 
 
-const Experience = () => {
+const Experience = ({ qualificationRef }) => {
 
   const work = [
     {
@@ -56,12 +56,13 @@ const Experience = () => {
   ];
 
   const [timeline, setTimeline] = useState(work);
-  const exp = document.getElementById('title-exp');
-  const edu = document.getElementById('title-edu');
+  const [expCls, setExpCls] = useState('experience click');
+  const [eduCls, setEduCls] = useState('education');
+
 
 
   return (
-    <section id='experience' className='experience-body'>
+    <section id='experience' className='experience-body' ref={qualificationRef}>
       <h5
         data-aos="fade-up"
         data-aos-delay="300"
@@ -80,18 +81,8 @@ const Experience = () => {
       >
         <div className='qualification-container'>
           <div className='qualifcation-category'>
-            <button id='title-exp' className='experience click' onClick={()=> {
-              console.log(exp);
-              /* exp.classList.add('click');
-              edu.classList.remove('click'); */
-              setTimeline(work);
-            }}>Experience</button>
-            <button id='title-edu' className='education' onClick={()=> {
-              console.log(edu);
-              /* exp.classList.remove('click');
-              edu.classList.add('click'); */
-              setTimeline(school);
-            }}>Education</button>
+            <button id='title-exp' className={expCls} onClick={()=> { setTimeline(work); setExpCls('experience click'); setEduCls('education'); }}>Experience</button>
+            <button id='title-edu' className={eduCls} onClick={()=> { setTimeline(school); setExpCls('experience'); setEduCls('education click'); }}>Education</button>
           </div>
           <VerticalTimeline lineColor={'#4db5ff'} animate={false}>
             {timeline?.map(({id, Date, Title, Company, Icon}) => {

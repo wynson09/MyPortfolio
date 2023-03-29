@@ -21,7 +21,7 @@ import { GiSkills } from 'react-icons/gi';
 
 
 
-const Skills = () => {
+const Skills = ({ skillsRef }) => {
   const frontEnd = [
     {
       id: 1,
@@ -136,7 +136,7 @@ const Skills = () => {
       >
         My Technical Skills
       </h2>
-      <article className='skills-container'>
+      <article className='skills-container' ref={skillsRef}>
         <div
           data-aos="fade-right"
           data-aos-delay="700"

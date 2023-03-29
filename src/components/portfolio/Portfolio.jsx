@@ -7,7 +7,7 @@ import Refocus from '../../assets/portfolio-img/refocus.png';
 import design from '../../assets/portfolio-img/button.png';
 
 
-const Portfolio = () => {
+const Portfolio = ({ portfolioRef }) => {
   const projects = [
     {
       id: 1,
@@ -51,7 +51,7 @@ const Portfolio = () => {
     },
   ]
   return (
-    <section id='portfolio' className='portfolio-body'>
+    <section id='portfolio' className='portfolio-body' ref={portfolioRef}>
       <h5
         data-aos="fade-up"
         data-aos-delay="300"

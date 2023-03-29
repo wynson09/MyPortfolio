@@ -5,7 +5,7 @@ import { BsMessenger, BsSendCheck, BsSend } from 'react-icons/bs';
 import emailjs from '@emailjs/browser';
 
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   const [sndMsg, setSndMsg] = useState(false);
   const [msgIcon, setMsgIcon] = useState(<BsSend />);
   const form = useRef();
@@ -26,7 +26,7 @@ const Contact = () => {
     
   };
   return (
-    <section id='contact' className='contact-body'>
+    <section id='contact' className='contact-body' ref={contactRef}>
       <h5
         data-aos="fade-up"
         data-aos-delay="300"

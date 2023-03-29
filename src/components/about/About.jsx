@@ -8,9 +8,9 @@ import { VscFolderLibrary } from 'react-icons/vsc';
 
 
 
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
-    <section id='about'>
+    <section id='about' ref={aboutRef}>
       <h5
       data-aos="fade-up"
       data-aos-delay="300"
@@ -31,7 +31,7 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="700"
           data-aos-duration="500"
-        >
+        > 
           <div className='about__me'>
             <div className='about__me-image'>
               <img src={Me} alt="about pic" />

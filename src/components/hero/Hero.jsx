@@ -13,12 +13,11 @@ import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper";
 
 
-const Header = () => {
+const Header = ({ heroRef }) => {
   const [firstCursor, setFirstCursor] = useState('l');
   const [secondCursor, setSecondCursor] = useState('l');
   const [firstText, setFirstText] = useState(false);
   const [secondText, setSecondText] = useState(false);
-
 
   const nextText = (firstText) => {
     if(firstText){
@@ -44,7 +43,7 @@ const Header = () => {
     
     <header className="hero-container">
       <div className="container header__container">
-        <div className='typeWriter-container'>
+        <div className='typeWriter-container' ref={heroRef}>
           <h5>
             <Typewriter
                 className='TW'

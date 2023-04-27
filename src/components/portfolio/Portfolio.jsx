@@ -6,9 +6,20 @@ import CV from "../../assets/portfolio-img/CV.png";
 import Refocus from "../../assets/portfolio-img/refocus.png";
 import design from "../../assets/portfolio-img/button.png";
 import CardTrick from "../../assets/cardMagic.png";
+import Project01 from "../../assets/portfolio-img/project01.png";
 
 const Portfolio = ({ portfolioRef }) => {
   const projects = [
+    {
+      id: 6,
+      img: Project01,
+      Title: "Digital Agency",
+      Description: `Personal project using WordPress. I built this digital agency website from scratch as my personal project. I just used free hosting from x10hosting.com for this project.`,
+      Tech: `Tech used: Wordpress, Elementor, Essential Addons, MetForm`,
+      Git: "https://github.com/wynson09?tab=repositories",
+      Live: "https://wnproject01.store/",
+      Delay: "200",
+    },
     {
       id: 5,
       img: CardTrick,
@@ -17,7 +28,7 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: React, Tailwind, Framer motion, SwiperJS, React-typewriter and other React components`,
       Git: "https://github.com/wynson09/Card-Magic.git",
       Live: "https://cardmagic.pages.dev/",
-      Delay: "200",
+      Delay: "400",
     },
     {
       id: 4,
@@ -27,7 +38,7 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: React, CSS, React Icons, SwiperJS, React-typewriter and other React components`,
       Git: "https://github.com/wynson09/MyPortfolio.git",
       Live: "https://wynson30.pages.dev/",
-      Delay: "400",
+      Delay: "600",
     },
     {
       id: 3,
@@ -37,7 +48,7 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: React, Tailwind, React Icons, Sanity, OAuth, Unplash `,
       Git: "https://github.com/wynson09/facegram_v2.git",
       Live: "https://face-gram.netlify.app/",
-      Delay: "600",
+      Delay: "800",
     },
     {
       id: 2,
@@ -47,7 +58,7 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: HTML, Sass, JavaScript`,
       Git: "https://github.com/wynson09/News-Website.git",
       Live: "https://wynson09.github.io/News-Website/",
-      Delay: "800",
+      Delay: "1000",
     },
     {
       id: 1,
@@ -57,7 +68,7 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: HTML, CSS`,
       Git: "https://github.com/wynson09/Nacalaban-CV.git",
       Live: "https://wynson.pages.dev/",
-      Delay: "1000",
+      Delay: "1200",
     },
   ];
   return (

@@ -11,17 +11,17 @@ import Project01 from "../../assets/portfolio-img/project01.png";
 const Portfolio = ({ portfolioRef }) => {
   const projects = [
     {
-      id: 6,
+      id: 1,
       img: Project01,
       Title: "Digital Agency",
       Description: `Personal project using WordPress. I built this digital agency website from scratch as my personal project. I just used free hosting from x10hosting.com for this project.`,
       Tech: `Tech used: Wordpress, Elementor, Essential Addons, MetForm`,
       Git: "https://github.com/wynson09?tab=repositories",
       Live: "https://wnproject01.store/",
-      Delay: "200",
+      Delay: "300",
     },
     {
-      id: 5,
+      id: 2,
       img: CardTrick,
       Title: "Card Trick",
       Description: `This is a 21-card magic trick.  I decided to implement a card trick like I used to play when I was a kid`,
@@ -31,7 +31,7 @@ const Portfolio = ({ portfolioRef }) => {
       Delay: "400",
     },
     {
-      id: 4,
+      id: 3,
       img: PortfolioImg,
       Title: "Portfolio",
       Description: `My personal portfolio website It's a simple portfolio with contact options such as email, messenger, or direct message.`,
@@ -41,7 +41,7 @@ const Portfolio = ({ portfolioRef }) => {
       Delay: "600",
     },
     {
-      id: 3,
+      id: 4,
       img: Facegram,
       Title: "Facegram",
       Description: `Facegram is the same concept as Pinterest. Image sharing and social media service designed to enable the saving and discovery of information on the internet using images and, on a smaller scale, animated GIFs in the form of pinboards.`,
@@ -51,7 +51,7 @@ const Portfolio = ({ portfolioRef }) => {
       Delay: "800",
     },
     {
-      id: 2,
+      id: 5,
       img: Refocus,
       Title: "Refocus News Website",
       Description: `This is an Individual Project in Refocus Web Development Course. The goal of this project is to create a news website. Functionality features are : Mark news as “read", Mark news as “favorite", Delete news from news feed results.`,
@@ -61,7 +61,7 @@ const Portfolio = ({ portfolioRef }) => {
       Delay: "1000",
     },
     {
-      id: 1,
+      id: 6,
       img: CV,
       Title: "Online Resume",
       Description: `This is an Individual Project in Refocus Web Development Course. The goal of this project is to  create this online resume as a website, so you will be able to share it with anyone and make it responsive.`,
@@ -71,6 +71,7 @@ const Portfolio = ({ portfolioRef }) => {
       Delay: "1200",
     },
   ];
+
   return (
     <section id="portfolio" className="portfolio-body" ref={portfolioRef}>
       <h5 data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">

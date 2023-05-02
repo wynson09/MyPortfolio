@@ -124,7 +124,7 @@ const Skills = ({ skillsRef }) => {
       level: "Basic",
     },
     {
-      id: 4,
+      id: 5,
       skillName: "Photoshop",
       src: photoshop,
       level: "Basic",

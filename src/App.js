@@ -40,7 +40,6 @@ function App() {
     } else if (contactView) {
       setOnView("#contact");
     }
-    console.log(onView);
   }, [
     onView,
     heroView,

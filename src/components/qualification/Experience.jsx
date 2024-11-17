@@ -11,20 +11,27 @@ const Experience = ({ qualificationRef }) => {
   const work = [
     {
       id: 1,
-      Date: 'Current',
-      Title: 'Doing Freelance',
-      Company: 'UpWork, Onlinejobs',
+      Date: '2023 - Present',
+      Title: 'Full Stack Web Developer',
+      Company: 'Wind’s Gate Philippine Software Development Inc.',
       Icon: WorkIcon
     },
     {
       id: 2,
-      Date: '2020 - 2022',
+      Date: '2022 - 2023',
+      Title: 'Freelance Software Developer',
+      Company: 'UpWork, Onlinejobs',
+      Icon: WorkIcon
+    },
+    {
+      id: 3,
+      Date: '2020 - 2021',
       Title: 'ESL (English as a Second Language)Teacher',
       Company: '51 TALK',
       Icon: WorkIcon
     },
     {
-      id: 3,
+      id: 4,
       Date: '2017 - 2020',
       Title: `Electronic equipment assembling`,
       Company: 'Hitachi-Johnson — Japan',
@@ -34,7 +41,7 @@ const Experience = ({ qualificationRef }) => {
   const school = [
     {
       id: 1,
-      Date: '2022 - Present',
+      Date: '2021 - 2022',
       Title: 'Web Development',
       Company: 'Refocus Digital Academy',
       Icon: SchoolIcon
@@ -65,19 +72,22 @@ const Experience = ({ qualificationRef }) => {
     <section id='experience' className='experience-body' ref={qualificationRef}>
       <h5
         data-aos="fade-up"
-        data-aos-delay="300"
+        data-aos-delay="200"
         data-aos-duration="500"
+        data-aos-once="true"
       >My Personal Journey</h5>
       <h2
         data-aos="fade-up"
-        data-aos-delay="300"
+        data-aos-delay="200"
         data-aos-duration="500"
+        data-aos-once="true"
       >Qualification</h2>
 
       <article
         data-aos="fade-right"
-        data-aos-delay="500"
+        data-aos-delay="300"
         data-aos-duration="500"
+        data-aos-once="true"
       >
         <div className='qualification-container'>
           <div className='qualifcation-category'>

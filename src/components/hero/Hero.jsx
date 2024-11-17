@@ -71,7 +71,7 @@ const Header = ({ heroRef }) => {
             <h5 className='text-light'>a 
               <span className='span-text'>
                   <Typewriter
-                    words={[`Junior Front-End Developer`]}
+                    words={[`Full Stack Web Developer`]}
                     cursor
                     cursorStyle='l'
                     typeSpeed={70}

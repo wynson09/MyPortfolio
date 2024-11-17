@@ -17,6 +17,22 @@ import postman from "../../assets/img-icon/postman.png";
 import photoshop from "../../assets/img-icon/ps.png";
 import wordpress from "../../assets/img-icon/wp.png";
 import elementor from "../../assets/img-icon/elementor.png";
+import nextjs from "../../assets/img-icon/nextjs.png"
+import asana from "../../assets/img-icon/asana.png"
+import bitbucket from "../../assets/img-icon/bitbucket.png"
+import bootstrap from "../../assets/img-icon/bootstrap.png"
+import dbeaver from "../../assets/img-icon/dbeaver.png"
+import docker from "../../assets/img-icon/docker.png"
+import firebase from "../../assets/img-icon/firebase.png"
+import graphql from "../../assets/img-icon/graphql.png"
+import kotlin from "../../assets/img-icon/kotlin.png"
+import laravel from "../../assets/img-icon/laravel.png"
+import mui from "../../assets/img-icon/mui.png"
+import nestjs from "../../assets/img-icon/nestjs.png"
+import redux from "../../assets/img-icon/redux.png"
+import shadcn from "../../assets/img-icon/shadcn.png"
+import slack from "../../assets/img-icon/slack.png"
+import typescript from "../../assets/img-icon/typescript.png"
 import { HiCode } from "react-icons/hi";
 import { FaCodeBranch } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
@@ -25,48 +41,84 @@ const Skills = ({ skillsRef }) => {
   const frontEnd = [
     {
       id: 1,
-      skillName: "React",
+      skillName: "ReactJS",
       src: react,
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       id: 2,
-      skillName: "HTML",
-      src: html,
-      level: "Intermediate",
+      skillName: "NextJS",
+      src: nextjs,
+      level: "Advanced",
     },
     {
       id: 3,
-      skillName: "CSS",
-      src: css,
-      level: "Intermediate",
+      skillName: "TypeScript",
+      src: typescript,
+      level: "Advanced",
     },
     {
       id: 4,
       skillName: "JavaScript",
       src: javascript,
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       id: 5,
+      skillName: "Redux",
+      src: redux,
+      level: "Advanced",
+    },
+    {
+      id: 6,
       skillName: "Tailwind",
       src: tailwind,
       level: "Intermediate",
     },
     {
-      id: 6,
-      skillName: "Sass",
-      src: sass,
+      id: 7,
+      skillName: "MUI",
+      src: mui,
       level: "Intermediate",
     },
     {
-      id: 7,
-      skillName: "jQuery",
-      src: jquery,
-      level: "Basic",
+      id: 8,
+      skillName: "Bootstrap",
+      src: bootstrap,
+      level: "Intermediate",
     },
     {
-      id: 8,
+      id: 9,
+      skillName: "Shadcn",
+      src: shadcn,
+      level: "Intermediate",
+    },
+    {
+      id: 10,
+      skillName: "Sass",
+      src: sass,
+      level: "Advanced",
+    },
+    {
+      id: 11,
+      skillName: "jQuery",
+      src: jquery,
+      level: "Advanced",
+    },
+    {
+      id: 12,
+      skillName: "HTML",
+      src: html,
+      level: "Advanced",
+    },
+    {
+      id: 13,
+      skillName: "CSS",
+      src: css,
+      level: "Advanced",
+    },
+    {
+      id: 14,
       skillName: "WordPress",
       src: wordpress,
       level: "Intermediate",
@@ -75,26 +127,56 @@ const Skills = ({ skillsRef }) => {
   const backEnd = [
     {
       id: 1,
-      skillName: "Sanity",
-      src: sanity,
-      level: "Basic",
+      skillName: "Firebase",
+      src: firebase,
+      level: "Advanced",
     },
     {
       id: 2,
-      skillName: "NodeJS",
-      src: node,
-      level: "Basic",
+      skillName: "MySQL",
+      src: mysql,
+      level: "Advanced",
     },
     {
       id: 3,
-      skillName: "php",
-      src: php,
-      level: "Basic",
+      skillName: "GraphQL",
+      src: graphql,
+      level: "Intermediate",
     },
     {
       id: 4,
-      skillName: "MySQL",
-      src: mysql,
+      skillName: "Laravel",
+      src: laravel,
+      level: "Intermediate",
+    },
+    {
+      id: 5,
+      skillName: "Kotlin",
+      src: kotlin,
+      level: "Intermediate",
+    },
+    {
+      id: 6,
+      skillName: "Nestjs",
+      src: nestjs,
+      level: "Intermediate",
+    },
+    {
+      id: 7,
+      skillName: "NodeJS",
+      src: node,
+      level: "Intermediate",
+    },
+    {
+      id: 8,
+      skillName: "php",
+      src: php,
+      level: "Intermediate",
+    },
+    {
+      id: 9,
+      skillName: "Sanity",
+      src: sanity,
       level: "Basic",
     },
   ];
@@ -103,28 +185,58 @@ const Skills = ({ skillsRef }) => {
       id: 1,
       skillName: "GitHub",
       src: github,
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       id: 2,
+      skillName: "Bitbucket",
+      src: bitbucket,
+      level: "Advanced",
+    },
+    {
+      id: 3,
+      skillName: "DBeaver",
+      src: dbeaver,
+      level: "Advanced",
+    },
+    {
+      id: 4,
+      skillName: "Slack",
+      src: slack,
+      level: "Advanced",
+    },
+    {
+      id: 5,
+      skillName: "Asana",
+      src: asana,
+      level: "Advanced",
+    },
+    {
+      id: 6,
+      skillName: "Postman",
+      src: postman,
+      level: "Intermediate",
+    },
+    {
+      id: 7,
       skillName: "Elementor",
       src: elementor,
       level: "Intermediate",
     },
     {
-      id: 3,
+      id: 8,
+      skillName: "Docker",
+      src: docker,
+      level: "Basic",
+    },
+    {
+      id: 9,
       skillName: "Figma",
       src: figma,
       level: "Basic",
     },
     {
-      id: 4,
-      skillName: "Postman",
-      src: postman,
-      level: "Basic",
-    },
-    {
-      id: 5,
+      id: 10,
       skillName: "Photoshop",
       src: photoshop,
       level: "Basic",
@@ -133,14 +245,14 @@ const Skills = ({ skillsRef }) => {
 
   return (
     <section id="skills" className="skill-box">
-      <h5 data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+      <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
         What skills I have
       </h5>
-      <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+      <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
         My Technical Skills
       </h2>
       <article className="skills-container" ref={skillsRef}>
-        <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
+        <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="500" data-aos-once="true">
           <div className="front-end">
             <div className="category">
               <HiCode className="category-icon" />
@@ -159,7 +271,7 @@ const Skills = ({ skillsRef }) => {
             </ul>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="500">
+        <div data-aos="fade-right" data-aos-delay="600" data-aos-duration="500" data-aos-once="true">
           <div className="back-end">
             <div className="category">
               <FaCodeBranch className="category-icon" />
@@ -178,7 +290,7 @@ const Skills = ({ skillsRef }) => {
             </ul>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="900" data-aos-duration="500">
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
           <div className="others">
             <div className="category">
               <GiSkills className="category-icon" />

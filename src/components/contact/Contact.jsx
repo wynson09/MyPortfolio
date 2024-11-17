@@ -15,7 +15,12 @@ const Contact = ({ contactRef }) => {
     setSndMsg(true);
     setMsgIcon(<BsSendCheck />);
 
-    emailjs.sendForm('service_mt3wgn7', 'template_uhjz6b2', form.current, 'geUCz0mPZ6PqTDW23')
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAIL_SERVICE_ID, 
+      process.env.REACT_APP_EMAIL_TEMPLATE, 
+      form.current, 
+      process.env.REACT_APP_EMAIL_API_KEY
+    )
       .then(() => {
         e.target.reset();
         setTimeout(()=> {
@@ -29,20 +34,23 @@ const Contact = ({ contactRef }) => {
     <section id='contact' className='contact-body' ref={contactRef}>
       <h5
         data-aos="fade-up"
-        data-aos-delay="300"
+        data-aos-delay="200"
         data-aos-duration="500"
+        data-aos-once="true"
       >Get In Touch</h5>
       <h2
         data-aos="fade-up"
-        data-aos-delay="300"
+        data-aos-delay="200"
         data-aos-duration="500"
+        data-aos-once="true"
       >Contact Me</h2>
 
       <div className='container contact__container'>
         <div
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="400"
           data-aos-duration="500"
+          data-aos-once="true"
         >
           <div className='contact__options'>
             <article className='contact__option'>
@@ -65,6 +73,7 @@ const Contact = ({ contactRef }) => {
             data-aos="fade-up"
             data-aos-delay="700"
             data-aos-duration="500"
+            data-aos-once="true"
           >
             <input type="name" name="name" placeholder='Your Full Name' required />
             <input type="email" name="email" placeholder='Your Email' required />

@@ -48,7 +48,7 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: React, Tailwind, React Icons, Sanity, OAuth, Unplash `,
       Git: "https://github.com/wynson09/facegram_v2.git",
       Live: "https://face-gram.netlify.app/",
-      Delay: "800",
+      Delay: "100",
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: HTML, Sass, JavaScript`,
       Git: "https://github.com/wynson09/News-Website.git",
       Live: "https://wynson09.github.io/News-Website/",
-      Delay: "1000",
+      Delay: "300",
     },
     {
       id: 6,
@@ -68,16 +68,16 @@ const Portfolio = ({ portfolioRef }) => {
       Tech: `Tech used: HTML, CSS`,
       Git: "https://github.com/wynson09/Nacalaban-CV.git",
       Live: "https://wynson.pages.dev/",
-      Delay: "1200",
+      Delay: "500",
     },
   ];
 
   return (
     <section id="portfolio" className="portfolio-body" ref={portfolioRef}>
-      <h5 data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+      <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
         My Recent Work
       </h5>
-      <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+      <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">
         Portfolio
       </h2>
       <article className="portfolio__container">
@@ -89,6 +89,7 @@ const Portfolio = ({ portfolioRef }) => {
                 data-aos="fade-up"
                 data-aos-delay={Delay}
                 data-aos-duration="500"
+                data-aos-once="true"
               >
                 <div className="portfolio__item">
                   <div className="btn-design">

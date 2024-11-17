@@ -16,7 +16,7 @@
 }
 .front-end, .back-end, .others {
     width: 400px;
-    height: 380px;
+    height: 580px;
     text-align: center;
     background: var(--color-bg-variant);
     border: 1px solid transparent;
@@ -113,7 +113,6 @@
 @media screen and (max-width: 425px) {
     .front-end, .back-end, .others {
         width: 300px;
-        height: 380px;
     }
     .front-end:hover, .back-end:hover, .others:hover {
         transform: scale(1);

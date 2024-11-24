@@ -28,11 +28,12 @@ import graphql from "../../assets/img-icon/graphql.png"
 import kotlin from "../../assets/img-icon/kotlin.png"
 import laravel from "../../assets/img-icon/laravel.png"
 import mui from "../../assets/img-icon/mui.png"
-import nestjs from "../../assets/img-icon/nestjs.png"
 import redux from "../../assets/img-icon/redux.png"
 import shadcn from "../../assets/img-icon/shadcn.png"
 import slack from "../../assets/img-icon/slack.png"
 import typescript from "../../assets/img-icon/typescript.png"
+import mongodb from "../../assets/img-icon/mongodb.png"
+import express from "../../assets/img-icon/express.png"
 import { HiCode } from "react-icons/hi";
 import { FaCodeBranch } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
@@ -127,54 +128,60 @@ const Skills = ({ skillsRef }) => {
   const backEnd = [
     {
       id: 1,
+      skillName: "NodeJS",
+      src: node,
+      level: "Advanced",
+    },
+    {
+      id: 2,
+      skillName: "Express",
+      src: express,
+      level: "Advanced",
+    },
+    {
+      id: 3,
       skillName: "Firebase",
       src: firebase,
       level: "Advanced",
     },
     {
-      id: 2,
+      id: 4,
+      skillName: "MongoDB",
+      src: mongodb,
+      level: "Advanced",
+    },
+    {
+      id: 5,
       skillName: "MySQL",
       src: mysql,
       level: "Advanced",
     },
     {
-      id: 3,
+      id: 6,
       skillName: "GraphQL",
       src: graphql,
       level: "Intermediate",
     },
     {
-      id: 4,
+      id: 7,
       skillName: "Laravel",
       src: laravel,
       level: "Intermediate",
     },
     {
-      id: 5,
+      id: 8,
       skillName: "Kotlin",
       src: kotlin,
       level: "Intermediate",
     },
     {
-      id: 6,
-      skillName: "Nestjs",
-      src: nestjs,
-      level: "Intermediate",
-    },
-    {
-      id: 7,
-      skillName: "NodeJS",
-      src: node,
-      level: "Intermediate",
-    },
-    {
-      id: 8,
+      id: 9,
       skillName: "php",
       src: php,
       level: "Intermediate",
     },
     {
-      id: 9,
+      id: 10,
       skillName: "Sanity",
       src: sanity,
       level: "Basic",

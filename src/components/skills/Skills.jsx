@@ -15,6 +15,8 @@ import node from "../../assets/img-icon/node.png";
 import figma from "../../assets/img-icon/figma.png";
 import postman from "../../assets/img-icon/postman.png";
 import photoshop from "../../assets/img-icon/ps.png";
+import aws from "../../assets/img-icon/aws.png";
+import cursor from "../../assets/img-icon/cursor.png";
 import wordpress from "../../assets/img-icon/wp.png";
 import elementor from "../../assets/img-icon/elementor.png";
 import nextjs from "../../assets/img-icon/nextjs.png"
@@ -247,6 +249,18 @@ const Skills = ({ skillsRef }) => {
       skillName: "Photoshop",
       src: photoshop,
       level: "Basic",
+    },
+    {
+      id: 11,
+      skillName: "AWS",
+      src: aws,
+      level: "Basic",
+    },
+    {
+      id: 12,
+      skillName: "Cursor",
+      src: cursor,
+      level: "Intermediate",
     },
   ];
 

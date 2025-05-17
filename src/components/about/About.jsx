@@ -36,7 +36,7 @@ const About = ({ aboutRef }) => {
             <article className="about__card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>More than 2 years</small>
+              <small>More than 3 years</small>
             </article>
             <article className="about__card">
               <FiUsers className="about_icon" />
@@ -50,7 +50,7 @@ const About = ({ aboutRef }) => {
             </article>
           </div>
           <p>
-            A passionate Software Developer and Full-Stack Web Developer with over 2 years of 
+            A passionate Software Developer and Full-Stack Web Developer with over 3 years of 
             experience creating innovative web applications and digital solutions. As a career 
             shifter, I’ve built my expertise through hands-on projects and a passion for problem-solving.
           </p>
